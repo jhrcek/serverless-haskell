@@ -69,6 +69,34 @@ packages:
   original:
     subdir: lib/services/amazonka-s3
     url: https://github.com/brendanhay/amazonka/archive/19e6dca8485b7b8f74c564b7e38389b1d5b59e22.tar.gz
+- completed:
+    hackage: aeson-2.0.1.0@sha256:8d6ca9d71a52c2148c7156cde09dc514ef192a41dce21e9bd32487e64a5b30f6,6245
+    pantry-tree:
+      size: 37910
+      sha256: 4c19385d42f07cd8a3b9b9540b3778cece89bdb7c8d89a08a82041dd9c249154
+  original:
+    hackage: aeson-2.0.1.0@sha256:8d6ca9d71a52c2148c7156cde09dc514ef192a41dce21e9bd32487e64a5b30f6,6245
+- completed:
+    hackage: hashable-1.3.2.0@sha256:781a0947cfe1cd82e51854cdb56ed10ed662a53e78041fd6f4fb88d04cab5c16,4039
+    pantry-tree:
+      size: 1050
+      sha256: feac33ec82252aebedd8669541c4570971769f6a0911243009c2074eb0133b16
+  original:
+    hackage: hashable-1.3.2.0@sha256:781a0947cfe1cd82e51854cdb56ed10ed662a53e78041fd6f4fb88d04cab5c16,4039
+- completed:
+    hackage: semialign-1.2.0.1@sha256:0e179b4d3a8eff79001d374d6c91917c6221696b9620f0a4d86852fc6a9b9501,2836
+    pantry-tree:
+      size: 537
+      sha256: 635bbbb517f0c063a4bc2e9e6efdb0e598b9d9fd467f52df81ab3a4af1fd923b
+  original:
+    hackage: semialign-1.2.0.1@sha256:0e179b4d3a8eff79001d374d6c91917c6221696b9620f0a4d86852fc6a9b9501,2836
+- completed:
+    hackage: time-compat-1.9.6.1@sha256:42d8f2e08e965e1718917d54ad69e1d06bd4b87d66c41dc7410f59313dba4ed1,5033
+    pantry-tree:
+      size: 4113
+      sha256: b262c5ae8d72d2073d12e1de1863abd234fad8c138df28f32bb51bc232ced608
+  original:
+    hackage: time-compat-1.9.6.1@sha256:42d8f2e08e965e1718917d54ad69e1d06bd4b87d66c41dc7410f59313dba4ed1,5033
 snapshots:
 - completed:
     size: 587126

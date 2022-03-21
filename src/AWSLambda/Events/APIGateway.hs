@@ -27,6 +27,7 @@ module AWSLambda.Events.APIGateway where
 import           Control.Lens            hiding ((.=))
 import           Data.Aeson
 import           Data.Aeson.Casing       (aesonDrop, camelCase)
+import qualified Data.Aeson.KeyMap       as KeyMap
 import           Data.Aeson.TH           (deriveFromJSON)
 import           Data.Aeson.Embedded
 import           Data.Aeson.TextValue
@@ -104,7 +105,7 @@ instance FromJSON Authorizer where
     Authorizer
       <$> o .:? "principalId"
       <*> o .:? "claims" .!= mempty
-      <*> (pure $ HashMap.delete "principalId" $ HashMap.delete "claims" o)
+      <*> (pure $ KeyMap.delete "principalId" $ KeyMap.delete "claims" o)
 $(makeLenses ''Authorizer)
 
 data ProxyRequestContext = ProxyRequestContext
