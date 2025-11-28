@@ -21,7 +21,6 @@ import qualified Data.Aeson as Aeson
 
 import           Data.Typeable (typeOf)
 
-import qualified Data.ByteString as ByteString
 import qualified Data.ByteString.Char8 as Char8
 import qualified Data.ByteString.Lazy as LBS
 
@@ -119,7 +118,7 @@ lambdaMainRaw act = do
             putStrLnLBS $ Aeson.encode $ exceptionJSON exception
             liftIO $ void $ httpNoBody (errorRequest address requestId exception) manager
     Nothing -> do
-      input <- liftIO $ LBS.fromStrict <$> ByteString.getLine
+      input <- liftIO $ LBS.fromStrict <$> Char8.getLine
       result <- act input
       putStrLnLBS result
 
